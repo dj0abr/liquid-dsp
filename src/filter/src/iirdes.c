@@ -501,8 +501,8 @@ void liquid_iirdes(liquid_iirdes_filtertype _ftype,
     unsigned int nza;
 
     // analog poles/zeros/gain
-    float complex pa[_n];
-    float complex za[_n];
+    float complex pa[_n+1];
+    float complex za[_n+1];
     float complex ka;
     float complex k0 = 1.0f; // nominal digital gain
 
